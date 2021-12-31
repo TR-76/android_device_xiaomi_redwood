@@ -8,3 +8,7 @@ on boot
     # Fast Charge
     chown system system /sys/class/qcom-battery/restrict_chg
     chmod 0666 /sys/class/qcom-battery/restrict_chg
+
+on property:vendor.post_boot.parsed=1
+    # Configure CPU input boost
+    write /sys/devices/system/cpu/cpu_boost/input_boost_freq "0:1612800"
