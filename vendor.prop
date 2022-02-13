@@ -284,6 +284,11 @@ ro.incremental.enable=yes
 # Thermal
 vendor.sys.thermal.data.path=/data/vendor/thermal/
 
+# Suspend properties
+suspend.short_suspend_threshold_millis=2000
+suspend.short_suspend_backoff_enabled=true
+suspend.max_sleep_time_millis=40000
+
 # USB
 vendor.usb.use_ffs_mtp=1
 
