@@ -30,3 +30,6 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 113254576128
 
 # Include proprietary files
 include vendor/xiaomi/redwood/BoardConfigVendor.mk
+
+# Include MindTheGapps
+-include vendor/gapps/arm64/BoardConfigVendor.mk
