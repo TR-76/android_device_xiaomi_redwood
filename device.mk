@@ -11,6 +11,10 @@ $(call inherit-product, device/xiaomi/sm8350-common/common.mk)
 PRODUCT_SYSTEM_PROPERTIES += \
     ro.product.mod_device=redwood_global
 
+# Init
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/etc/init.nfc.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.nfc.rc
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
