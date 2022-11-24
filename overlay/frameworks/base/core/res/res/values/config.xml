@@ -359,4 +359,7 @@
     <string-array name="config_disableApkUnlessMatchedSku_skus_list" translatable="false">
         <item>redwood</item>
     </string-array>
+
+    <!-- Whether or not wcg mode should be enabled on this device -->
+    <bool name="config_enableWcgMode">true</bool>
 </resources>
