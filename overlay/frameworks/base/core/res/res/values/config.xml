@@ -347,4 +347,7 @@
         <item>920</item>  <!-- sensorLocationY -->
         <item>200</item>  <!-- sensorRadius -->
     </array>
+
+    <!-- Whether or not wcg mode should be enabled on this device -->
+    <bool name="config_enableWcgMode">true</bool>
 </resources>
