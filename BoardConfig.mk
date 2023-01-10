@@ -12,6 +12,9 @@ include device/xiaomi/sm8350-common/BoardConfigCommon.mk
 # Board
 TARGET_BOOTLOADER_BOARD_NAME := redwood
 
+# Ignore overriding commands errors
+BUILD_BROKEN_DUP_RULES := true
+
 # Kernel
 TARGET_KERNEL_CONFIG += vendor/redwood_QGKI.config
 
