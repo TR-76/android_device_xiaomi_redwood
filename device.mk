@@ -23,6 +23,9 @@ $(call inherit-product, vendor/xiaomi/redwood/redwood-vendor.mk)
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
+# ViperFX
+$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
+
 # API
 PRODUCT_SHIPPING_API_LEVEL := 31
 
