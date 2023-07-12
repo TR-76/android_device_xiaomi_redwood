@@ -569,3 +569,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
+
+# Remove Packages
+PRODUCT_PACKAGES += \
+    RemovePackages
