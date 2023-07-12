@@ -559,3 +559,8 @@ PRODUCT_BOOT_JARS += \
 
 PRODUCT_SYSTEM_PROPERTIES += \
     vendor.sys.video.disable.ubwc=1
+
+
+# Remove Packages
+PRODUCT_PACKAGES += \
+    RemovePackages
