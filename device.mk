@@ -297,6 +297,15 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
+# Overlays-RRO
+PRODUCT_PACKAGES += \
+    redwoodCNSettingsProviderOverlay \
+    redwoodCNWifiOverlay \
+    redwoodGLSettingsProviderOverlay \
+    redwoodGLWifiOverlay \
+    redwoodINSettingsProviderOverlay \
+    redwoodINWifiOverlay
+
 # Partitions
 PRODUCT_PACKAGES += \
     vendor_bt_firmware_mountpoint \
