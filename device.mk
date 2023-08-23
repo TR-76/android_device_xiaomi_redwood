@@ -68,3 +68,6 @@ PRODUCT_SYSTEM_PROPERTIES += \
 
 # Call the proprietary setup
 $(call inherit-product, vendor/xiaomi/redwood/redwood-vendor.mk)
+
+# Call the Leica Camera setup
+$(call inherit-product-if-exists, vendor/xiaomi/redwood-miuicamera/products/miuicamera.mk)
