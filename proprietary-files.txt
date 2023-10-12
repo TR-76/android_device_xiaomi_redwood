@@ -470,6 +470,9 @@ vendor/etc/camera/xiaomi/thirdpartyjpegsnapshot.json
 vendor/etc/camera/xiaomi/thirdpartysnapshot.json
 vendor/etc/camera/xiaomiSceneDetection.xml
 
+# Camera Optical - from lisa MIUI V14.0.6.0.TKOMIXM
+vendor/lib64/libwa_opticalzoomfactor.so|81bbe8c568871d097e85a6d4a591e69f9d24731b
+
 # Camera plugins
 vendor/lib64/camera/plugins/com.qcom.plugin.gpu.so
 vendor/lib64/camera/plugins/com.qcom.plugin.offlinepostproc.so
