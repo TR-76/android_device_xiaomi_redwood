@@ -80,6 +80,9 @@ function blob_fixup() {
         vendor/lib64/hw/camera.xiaomi.so)
             "${SIGSCAN}" -p "29 07 00 94" -P "1F 20 03 D5" -f "${2}"
             ;;
+	vendor/lib64/hw/com.qti.chi.override.so)
+            sed -i 's/\/system\/lib64\([^\/]\)/\/vendor\/lib64\1/g' "${2}"
+            ;;
     esac
 }
 
