@@ -84,6 +84,7 @@ vendor/lib/libresampler.so
 vendor/lib/libsndmonitor.so
 vendor/lib/libssrec.so
 vendor/lib/libvideoNS.so
+vendor/lib/vndk/libxlog.so
 
 # Audio firmware
 vendor/firmware/aw882xx_acf.bin
