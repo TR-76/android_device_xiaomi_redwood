@@ -903,4 +903,13 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <instance>sxrhalservice</instance>
         </interface>
     </hal>
+    <!-- QSPM-HAL service-->
+    <hal format="hidl" optional="true">
+        <name>vendor.qti.qspmhal</name>
+        <version>1.0</version>
+        <interface>
+            <name>IQspmhal</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
 </compatibility-matrix>
