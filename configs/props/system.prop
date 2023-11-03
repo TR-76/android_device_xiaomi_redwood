@@ -23,7 +23,6 @@ ro.max.fling_velocity=21000
 
 # Graphics
 debug.sf.disable_backpressure=1
-debug.sf.enable_hwc_vds=1
 
 #hwui properties
 ro.hwui.texture_cache_size=72
