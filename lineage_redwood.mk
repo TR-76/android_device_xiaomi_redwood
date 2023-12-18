@@ -14,6 +14,10 @@ $(call inherit-product, device/xiaomi/redwood/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# microG
+$(call inherit-product-if-exists, vendor/microg/config.mk)
+PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
+
 PRODUCT_BRAND := POCO
 PRODUCT_DEVICE := redwood
 PRODUCT_MANUFACTURER := Xiaomi
