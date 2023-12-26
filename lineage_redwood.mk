@@ -21,6 +21,7 @@ $(call inherit-product-if-exists, vendor/gapps/arm64/arm64-vendor.mk)
 TARGET_SUPPORTS_BLUR := true
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_DISABLE_EPPE := true
 
 PRODUCT_BRAND := POCO
 PRODUCT_DEVICE := redwood
