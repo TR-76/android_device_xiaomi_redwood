@@ -7,6 +7,10 @@
 # Inherit from sm8350-common
 $(call inherit-product, device/xiaomi/sm8350-common/common.mk)
 
+# LiveDisplay
+PRODUCT_PACKAGES += \
+    vendor.lineage.livedisplay@2.1-service.xiaomi_sm8350
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
