@@ -13,6 +13,7 @@ $(call inherit-product, device/xiaomi/redwood/device.mk)
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+TARGET_EXCLUDES_AUDIOFX := true
 
 # microG
 $(call inherit-product-if-exists, vendor/microg/config.mk)
