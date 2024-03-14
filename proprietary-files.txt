@@ -519,6 +519,8 @@ vendor/firmware/vpu20_1v.b16
 vendor/firmware/vpu20_1v.b17
 vendor/firmware/vpu20_1v.b18
 vendor/firmware/vpu20_1v.b19
+vendor/firmware/vpu20_1v.elf
+vendor/firmware/vpu20_1v.lst
 vendor/firmware/vpu20_1v.mbn
 vendor/firmware/vpu20_1v.mdt
 vendor/firmware/vpu20_1v_unsigned.mbn
