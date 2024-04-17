@@ -30,7 +30,8 @@ PRODUCT_PACKAGES += \
     redwoodGLSettingsProviderOverlay \
     redwoodGLWifiOverlay \
     redwoodINSettingsProviderOverlay \
-    redwoodINWifiOverlay
+    redwoodINWifiOverlay \
+    redwoodNfcOverlay
 
 # Remove unwanted packages
 PRODUCT_PACKAGES += \
