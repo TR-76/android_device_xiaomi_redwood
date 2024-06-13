@@ -29,6 +29,7 @@ PRODUCT_SHIPPING_API_LEVEL := $(BOARD_SHIPPING_API_LEVEL)
 
 # Audio
 PRODUCT_PACKAGES += \
+    libaudioroute.vendor \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
@@ -136,7 +137,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libcamera2ndk_vendor \
     libion.vendor \
-    libgui_vendor
+    libgui_vendor \
+    libexif.vendor \
+    liblz4.vendor
 
 PRODUCT_PACKAGES += \
     liblz4.vendor
@@ -444,7 +447,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libcurl.vendor \
     libjsoncpp.vendor \
-    libsqlite.vendor
+    libnetutils.vendor \
+    libsqlite.vendor \
+    libutilscallstack.vendor
 
 # Sensors
 PRODUCT_PACKAGES += \
@@ -513,7 +518,8 @@ PRODUCT_PACKAGES_DEBUG += \
 
 # USB
 PRODUCT_PACKAGES += \
-    android.hardware.usb@1.3-service-qti
+    android.hardware.usb@1.3-service-qti \
+    libusbhost.vendor
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.usb.accessory.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.usb.accessory.xml \
