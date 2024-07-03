@@ -22,6 +22,9 @@ PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
 # Mulch Webview
 $(call inherit-product-if-exists, vendor/mulch/mulch.mk)
 
+# Firmware
+$(call inherit-product-if-exists, vendor/xiaomi/redwood-firmware/config.mk)
+
 PRODUCT_BRAND := POCO
 PRODUCT_DEVICE := redwood
 PRODUCT_MANUFACTURER := Xiaomi
