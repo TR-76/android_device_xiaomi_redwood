@@ -136,10 +136,12 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libcamera2ndk_vendor \
+    libcamera_metadata.vendor \
     libion.vendor \
     libgui_vendor \
     libexif.vendor \
-    liblz4.vendor
+    liblz4.vendor \
+    libyuv.vendor
 
 PRODUCT_PACKAGES += \
     liblz4.vendor
@@ -341,6 +343,8 @@ PRODUCT_PACKAGES += \
     libOmxEvrcEnc \
     libOmxG711Enc \
     libOmxQcelp13Enc \
+    libstagefright_softomx.vendor \
+    libstagefright_softomx_plugin.vendor \
     libstagefrighthw
 
 PRODUCT_COPY_FILES += \
