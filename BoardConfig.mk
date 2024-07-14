@@ -38,6 +38,9 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 113254576128
 # Properties
 TARGET_ODM_PROP += $(DEVICE_PATH)/odm.prop
 
+# SurfaceFlinger
+TARGET_USE_AOSP_SURFACEFLINGER := true
+
 # Include proprietary files
 include vendor/xiaomi/redwood/BoardConfigVendor.mk
 
