@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from redwood V816.0.5.0.UMSMIXM
+# All unpinned blobs below are extracted from redwood V816.0.6.0.UMSMIXM
 
 # ACDB
 vendor/etc/acdbdata/Forte/Forte_Bluetooth_cal.acdb
@@ -570,6 +570,9 @@ vendor/lib64/hw/vendor.xiaomi.hardware.misys@3.0-impl.so
 vendor/lib64/hw/vendor.xiaomi.hardware.misys@4.0-impl.so
 vendor/lib64/libcheckpid.so
 vendor/lib64/liblogwrap_vendor.so
+vendor/lib64/libmicuttlefish_fs.so
+vendor/lib64/libmicuttlefish_utils.so
+vendor/lib64/libmivsock_utils.so
 vendor/lib64/vendor.xiaomi.hardware.misys@1.0.so
 vendor/lib64/vendor.xiaomi.hardware.misys@2.0.so
 vendor/lib64/vendor.xiaomi.hardware.misys@3.0.so
