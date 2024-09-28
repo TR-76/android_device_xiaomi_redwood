@@ -13,6 +13,10 @@ $(call inherit-product-if-exists, vendor/xiaomi/camera/miuicamera.mk)
 # Camera
 PRODUCT_SYSTEM_PROPERTIES += \
     ro.product.mod_device=redwood_global
+	
+# Fingerprint
+PRODUCT_PACKAGES += \
+    vendor.xiaomi.hardware.fx.tunnel@1.0.vendor
 
 # Init
 PRODUCT_COPY_FILES += \
