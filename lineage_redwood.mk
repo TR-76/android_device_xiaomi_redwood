@@ -21,6 +21,9 @@ PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
 # Mulch Webview
 $(call inherit-product-if-exists, vendor/mulch/mulch.mk)
 
+# Firmware
+$(call inherit-product-if-exists, vendor/xiaomi/redwood-firmware/config.mk)
+
 # Device props
 TARGET_SUPPORTS_BLUR := true
 TARGET_SUPPORTS_QUICK_TAP := true
