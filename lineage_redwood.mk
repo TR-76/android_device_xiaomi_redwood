@@ -18,6 +18,9 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 $(call inherit-product-if-exists, vendor/microg/config.mk)
 PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
 
+# Mulch Webview
+$(call inherit-product-if-exists, vendor/mulch/mulch.mk)
+
 # Device props
 TARGET_SUPPORTS_BLUR := true
 TARGET_SUPPORTS_QUICK_TAP := true
