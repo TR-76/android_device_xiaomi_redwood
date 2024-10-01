@@ -14,8 +14,9 @@ $(call inherit-product, device/xiaomi/redwood/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# Inherit from MindTheGapps
-$(call inherit-product-if-exists, vendor/gapps/arm64/arm64-vendor.mk)
+# microG
+$(call inherit-product-if-exists, vendor/microg/config.mk)
+PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
 
 # Device props
 TARGET_SUPPORTS_BLUR := true
