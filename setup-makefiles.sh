@@ -47,6 +47,7 @@ function lib_to_package_fixup_vendor_variants() {
         vendor.xiaomi.hardware.misys@2.0 | \
         vendor.xiaomi.hardware.misys@3.0 | \
         vendor.xiaomi.hardware.misys@4.0 | \
+        libmmosal | \
             vendor.qti.imsrtpservice@3.0)
             echo "$1-vendor"
             ;;
