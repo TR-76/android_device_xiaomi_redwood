@@ -27,6 +27,7 @@ TARGET_KERNEL_CONFIG += vendor/redwood_QGKI.config
 
 # Kernel modules
 BOOT_KERNEL_MODULES := \
+    focaltech_touch.ko \
     goodix_core.ko \
     xiaomi_touch.ko
 BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(BOOT_KERNEL_MODULES)
