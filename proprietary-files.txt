@@ -906,9 +906,6 @@ system_ext/lib64/libmmosal.so
 system_ext/lib64/libmmparser_lite.so
 vendor/bin/hw/vendor.qti.media.c2@1.0-service
 vendor/etc/init/vendor.qti.media.c2@1.0-service.rc
-vendor/etc/media/video_system_specs.json
-vendor/etc/media_lahaina/video_system_specs.json
-vendor/etc/media_yupik_v1/video_system_specs.json
 vendor/etc/seccomp_policy/codec2.vendor.base-arm.policy
 vendor/etc/seccomp_policy/codec2.vendor.ext-arm.policy
 vendor/etc/vintf/manifest/c2_manifest_vendor.xml
@@ -923,6 +920,16 @@ vendor/lib/libqcodec2_platform.so
 vendor/lib/libqcodec2_utils.so
 vendor/lib/libqcodec2_v4l2codec.so
 vendor/lib64/libmmosal.so;MODULE_SUFFIX=_vendor
+
+# Media configs
+vendor/etc/media/video_system_specs.json
+vendor/etc/media_codecs_performance_lahaina.xml
+vendor/etc/media_codecs_performance_yupik_v1.xml
+vendor/etc/media_lahaina/video_system_specs.json
+vendor/etc/media_profiles_lahaina.xml
+vendor/etc/media_profiles_yupik_v1.xml
+vendor/etc/media_yupik_v1/video_system_specs.json
+vendor/etc/video_system_specs.json
 
 # Media (VPU firmware)
 vendor/firmware/vpu20_1v.b00
