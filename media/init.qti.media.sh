@@ -53,17 +53,6 @@ case "$target" in
                 fi
                 setprop vendor.netflix.bsp_rev "Q7325-SPY-33758-1"
                 ;;
-            450)
-                sku_ver=`cat /sys/devices/platform/soc/aa00000.qcom,vidc/sku_version` 2> /dev/null
-                if [ $sku_ver -eq 1 ]; then
-                    setprop vendor.media.target_variant "_shima_v1"
-                elif [ $sku_ver -eq 2 ]; then
-                    setprop vendor.media.target_variant "_shima_v2"
-                else
-                    setprop vendor.media.target_variant "_shima_v3"
-                fi
-                setprop vendor.netflix.bsp_rev "Q875-32774-1"
-                ;;
             *)
                 setprop vendor.media.target_variant "_lahaina"
                 setprop vendor.netflix.bsp_rev "Q875-32408-1"
