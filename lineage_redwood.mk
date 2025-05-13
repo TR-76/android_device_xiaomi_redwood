@@ -9,6 +9,9 @@ $(call inherit-product, device/xiaomi/redwood/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Cromite Webview
+$(call inherit-product-if-exists, vendor/cromite/cromite.mk)
+
 # Device props
 TARGET_SUPPORTS_BLUR := true
 TARGET_SUPPORTS_QUICK_TAP := true
