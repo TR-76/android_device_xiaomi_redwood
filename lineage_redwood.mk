@@ -12,6 +12,9 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Cromite Webview
 $(call inherit-product-if-exists, vendor/cromite/cromite.mk)
 
+# Firmware
+$(call inherit-product-if-exists, vendor/xiaomi/redwood-firmware/config.mk)
+
 # Device props
 TARGET_SUPPORTS_BLUR := true
 TARGET_SUPPORTS_QUICK_TAP := true
