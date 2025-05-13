@@ -24,6 +24,7 @@ $(call inherit-product-if-exists, packages/apps/ViPER4AndroidFX/config.mk)
 
 # MiuiCamera
 $(call inherit-product-if-exists, vendor/xiaomi/redwood-miuicamera/miuicamera.mk)
+TARGET_INCLUDES_MIUI_VIDEOPLAYER := false
 
 # LeicaCamera
 $(call inherit-product-if-exists, vendor/xiaomi/miuicamera/miuicamera.mk)
