@@ -1,1 +1,2 @@
 allow hal_fingerprint_default rootfs:dir { read };
+allow hal_fingerprint_default self:capability { sys_nice };
