@@ -240,6 +240,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_ENABLE_UFFD_GC := true
 OVERRIDE_ENABLE_UFFD_GC := true
 
+# LiveDisplay
+PRODUCT_PACKAGES += \
+    vendor.lineage.livedisplay-service.sysfs
+
+$(call soong_config_set,livedisplay_sysfs,enable_se,true)
+
 # Lineage Health
 $(call soong_config_set,lineage_health,charging_control_supports_bypass,false)
 
