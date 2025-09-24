@@ -24,19 +24,11 @@ $(call inherit-product-if-exists, vendor/xiaomi/redwood-firmware/config.mk)
 # AxionOS flags
 AXION_CAMERA_REAR_INFO := 108,8,2
 AXION_CAMERA_FRONT_INFO := 16
-TARGET_ENABLE_BLUR := true
+AXION_PROCESSOR := Qualcomm_Snapdragon_778G_5G
+
 TARGET_EXCLUDES_AUDIOFX := true
 TARGET_PREBUILT_BCR := false
-
-AXION_PROCESSOR := Qualcomm_Snapdragon_778G_5G
-AXION_CPU_SMALL_CORES := 0,1,2,3
-AXION_CPU_BIG_CORES := 4,5,6,7
-AXION_CPU_BG := 0-2
-AXION_CPU_FG ?= 0-7
-AXION_CPU_LIMIT_BG := 0-1
-AXION_ALL_CORES ?= 0-7
-AXION_CPU_LIMIT_UI ?= 0-4
-AXION_CPU_DISPLAY ?= 4-7
+TARGET_ENABLE_BLUR := true
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2400
