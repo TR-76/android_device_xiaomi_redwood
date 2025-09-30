@@ -14,7 +14,6 @@ allow hal_camera_default proc_stat:file r_file_perms;
 allow hal_camera_default sysfs:file { read open getattr };
 allow hal_camera_default proc_meminfo:file r_file_perms;
 allow hal_camera_default proc_pressure_cpu:file r_file_perms;
-allow hal_camera_default sys_thermal_flash_state:file rw_file_perms;
 
 get_prop(hal_camera_default, graphics_config_prop)
 
