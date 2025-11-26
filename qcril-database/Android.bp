@@ -14,8 +14,8 @@ genrule {
     name: "qcril_config_database",
     enabled: true,
     srcs: [
-        "//vendor/xiaomi/sm8350-common:proprietary_rildb_config_sql_files",
-        "//vendor/xiaomi/sm8350-common:proprietary_rildb_other_sql_files",
+        "//vendor/xiaomi/redwood:proprietary_rildb_config_sql_files",
+        "//vendor/xiaomi/redwood:proprietary_rildb_other_sql_files",
         ":rildb_config_sql_files",
     ],
     tools: [

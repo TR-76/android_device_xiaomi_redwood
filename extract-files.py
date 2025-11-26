@@ -1,6 +1,6 @@
 #!/usr/bin/env -S PYTHONPATH=../../../tools/extract-utils python3
 #
-# SPDX-FileCopyrightText: 2024 The LineageOS Project
+# SPDX-FileCopyrightText: 2025 The LineageOS Project
 # SPDX-License-Identifier: Apache-2.0
 #
 
@@ -18,7 +18,7 @@ from extract_utils.main import (
 )
 
 namespace_imports = [
-    'device/xiaomi/sm8350-common',
+    'device/xiaomi/redwood',
     'hardware/qcom-caf/sm8350',
     'hardware/qcom-caf/wlan',
     'hardware/xiaomi',
@@ -44,6 +44,13 @@ lib_fixups: lib_fixups_user_type = {
 }
 
 blob_fixups: blob_fixups_user_type = {
+    ('vendor/etc/camera/pureShot_parameter.xml', 'vendor/etc/camera/pureView_parameter.xml'): blob_fixup()
+        .regex_replace(r'=(\d+)>', r'="\1">'),
+    'vendor/lib64/hw/camera.qcom.so': blob_fixup()
+        .binary_regex_replace(b'\x73\x74\x5F\x6C\x69\x63\x65\x6E\x73\x65\x2E\x6C\x69\x63', b'\x63\x61\x6D\x65\x72\x61\x5F\x63\x6E\x66\x2E\x74\x78\x74')
+        .add_needed('libprocessgroup_shim.so'),
+    'vendor/lib64/hw/camera.xiaomi.so': blob_fixup()
+        .sig_replace('29 07 00 94', '1F 20 03 D5'),
     'system_ext/bin/wfdservice64': blob_fixup()
         .add_needed('libwfdservice_shim.so'),
     'system_ext/etc/init/wfdservice.rc': blob_fixup()
@@ -68,7 +75,7 @@ blob_fixups: blob_fixups_user_type = {
 }  # fmt: skip
 
 module = ExtractUtilsModule(
-    'sm8350-common',
+    'redwood',
     'xiaomi',
     blob_fixups=blob_fixups,
     lib_fixups=lib_fixups,
