@@ -1,10 +1,10 @@
 /*
- * Copyright (C) 2022 The LineageOS Project
+ * Copyright (C) 2025 The LineageOS Project
  *
  * SPDX-License-Identifier: Apache-2.0
  */
 
-#define LOG_TAG "UdfpsHandler.xiaomi_sm8350"
+#define LOG_TAG "UdfpsHandler.redwood"
 
 #include <aidl/android/hardware/biometrics/fingerprint/BnFingerprint.h>
 #include <android-base/logging.h>
