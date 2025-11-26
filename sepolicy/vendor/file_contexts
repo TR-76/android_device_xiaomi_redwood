@@ -28,10 +28,6 @@
 /data/vendor/goodix(/.*)?                                                 u:object_r:fingerprint_vendor_data_file:s0
 /dev/goodix_fp                                                            u:object_r:vendor_fingerprint_device:s0
 /mnt/vendor/persist/goodix(/.*)?                                          u:object_r:fingerprint_vendor_data_file:s0
-/sys/devices/platform/soc/soc:qcom,dsi-display-primary/fod_hbm            u:object_r:vendor_sysfs_udfps:s0
-/sys/devices/platform/soc/soc:qcom,dsi-display-primary/fod_ui             u:object_r:vendor_sysfs_udfps:s0
-/sys/devices/virtual/touch/touch_dev/fod_press_status                     u:object_r:vendor_sysfs_udfps:s0
-/sys/devices/virtual/touch/tp_dev/fod_status                              u:object_r:vendor_sysfs_udfps:s0
 /vendor/bin/hw/android\.hardware\.biometrics\.fingerprint-service\.xiaomi u:object_r:hal_fingerprint_default_exec:s0
 
 # Mlipay
