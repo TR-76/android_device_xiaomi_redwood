@@ -51,6 +51,8 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libprocessgroup_shim.so'),
     'vendor/lib64/hw/camera.xiaomi.so': blob_fixup()
         .sig_replace('29 07 00 94', '1F 20 03 D5'),
+    'vendor/lib64/hw/com.qti.chi.override.so': blob_fixup()
+        .add_needed('libprocessgroup_shim.so'),
     'system_ext/bin/wfdservice64': blob_fixup()
         .add_needed('libwfdservice_shim.so'),
     'system_ext/etc/init/wfdservice.rc': blob_fixup()
