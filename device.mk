@@ -407,7 +407,7 @@ PRODUCT_COPY_FILES += \
 
 # Sku properties
 PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/sku/,$(TARGET_COPY_OUT_ODM)/etc)
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/sku/,$(TARGET_COPY_OUT_ODM)/etc)
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
