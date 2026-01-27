@@ -16,6 +16,9 @@ TARGET_DISABLE_EPPE := true
 TARGET_SUPPORTS_OMX_SERVICE := false
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Cromite Webview
+$(call inherit-product-if-exists, vendor/cromite/cromite.mk)
+
 # AxionOS flags
 AXION_CAMERA_REAR_INFO := 108,8,2
 AXION_CAMERA_FRONT_INFO := 16
