@@ -21,9 +21,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 # Inherit proprietary targets
 $(call inherit-product, vendor/xiaomi/redwood/redwood-vendor.mk)
 
-# Basic Call Recorder
-$(call inherit-product-if-exists, vendor/bcr/bcr.mk)
-
 # MIUI Camera
 $(call inherit-product-if-exists, vendor/xiaomi/redwood-miuicamera/device.mk)
 
