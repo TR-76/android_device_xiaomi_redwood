@@ -19,6 +19,10 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Cromite Webview
 $(call inherit-product-if-exists, vendor/cromite/cromite.mk)
 
+# microG
+$(call inherit-product-if-exists, vendor/microg/config.mk)
+PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
+
 # AxionOS flags
 AXION_CAMERA_REAR_INFO := 108,8,2
 AXION_CAMERA_FRONT_INFO := 16
