@@ -14,6 +14,9 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 $(call inherit-product-if-exists, vendor/microg/config.mk)
 PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
 
+# Firmware
+$(call inherit-product-if-exists, vendor/xiaomi/redwood-firmware/config.mk)
+
 PRODUCT_BRAND := POCO
 PRODUCT_DEVICE := redwood
 PRODUCT_MANUFACTURER := Xiaomi
