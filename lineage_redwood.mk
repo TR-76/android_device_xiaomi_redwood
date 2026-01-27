@@ -8,7 +8,22 @@
 $(call inherit-product, device/xiaomi/redwood/device.mk)
 
 # Inherit some common Lineage stuff.
+TARGET_DISABLE_EPPE := true
+TARGET_SUPPORTS_OMX_SERVICE := false
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+
+# AxionOS flags
+AXION_CAMERA_REAR_INFO := 108,8,2
+AXION_CAMERA_FRONT_INFO := 16
+AXION_PROCESSOR := Qualcomm®_Snapdragon™_778G_5G
+
+TARGET_EXCLUDES_AUDIOFX := true
+TARGET_PREBUILT_BCR := false
+TARGET_ENABLE_BLUR := true
+
+# Boot animation
+TARGET_SCREEN_HEIGHT := 2400
+TARGET_SCREEN_WIDTH := 1080
 
 PRODUCT_BRAND := POCO
 PRODUCT_DEVICE := redwood
