@@ -53,7 +53,7 @@ TARGET_BOOTLOADER_BOARD_NAME := redwood
 TARGET_NO_BOOTLOADER := true
 
 # Display
-TARGET_SCREEN_DENSITY ?= 440
+TARGET_SCREEN_DENSITY ?= 400
 
 # Dolby Atmos
 include vendor/oneplus/dolby/BoardConfigDolby.mk
