@@ -12,9 +12,6 @@ TARGET_DISABLE_EPPE := true
 TARGET_SUPPORTS_OMX_SERVICE := false
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# Cromite Webview
-$(call inherit-product-if-exists, vendor/cromite/cromite.mk)
-
 # microG
 $(call inherit-product-if-exists, vendor/microg/config.mk)
 PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
